@@ -7,7 +7,7 @@ public class DAO {
 	public static ProductStock findById(String id) {
 		
 		if(psi.doesProductOrderIdExistinStock(id)) {
-			//return Database.mMap.get(id);
+	
 			return Database.getmMap().get(id);
 		}
 		return null;

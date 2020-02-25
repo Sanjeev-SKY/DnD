@@ -8,19 +8,19 @@ public class ProductDAOImpl implements ProductDAO{
 
 	@Override
 	public String trackProductOrder(ProductStock productStock) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
 	@Override
 	public boolean processDateCheck(ProductStock productStock) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public String updateExitDateinStock(ProductStock productStock) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
@@ -40,10 +40,11 @@ public class ProductDAOImpl implements ProductDAO{
 
 	@Override
 	public boolean doesProductOrderIdExistinStock(String orderId) {
-
-//		if(Database.mMap.containsKey(orderId)) {
-//			return true;
-//		}
+		/*
+		 * if(Database.mMap.containsKey(orderId)) {
+		 * return true;
+		 * }
+		 */
 		
 		if(Database.getmMap().containsKey(orderId)) {
 			return true;
@@ -54,7 +55,7 @@ public class ProductDAOImpl implements ProductDAO{
 
 	@Override
 	public boolean doesProductOrderIdExist(String orderId) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 	
